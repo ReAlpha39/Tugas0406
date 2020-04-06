@@ -112,6 +112,7 @@
             android:background="@color/colorPrimaryDark"
             android:text="@string/loginB"
             android:onClick="signIn"
+            android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.971"
