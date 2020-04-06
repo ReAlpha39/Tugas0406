@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Exercise0406</string>
+    <string name="app_name">Exercise Menu 18A</string>
+    <string name="login">LOGIN USER</string>
+    <string name="usern">Username</string>
+    <string name="usernH">Masukkan Username</string>
+    <string name="pass">Password</string>
+    <string name="passH">Masukkan Password</string>
+    <string name="loginB">SIGN-IN</string>
 </resources>
