@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -19,6 +20,12 @@ public class ActivityRumus extends AppCompatActivity {
     private String judulS;
     private String tipeS;
     private String tipeBS;
+
+    private EditText data1;
+    private TextView result;
+
+    private String data;
+    private double nilai;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +43,9 @@ public class ActivityRumus extends AppCompatActivity {
         judul = (TextView) findViewById(R.id.inputJudul);
         tipe = (TextView) findViewById(R.id.tipe);
         tipeB = (TextView) findViewById(R.id.tipeB);
+
+        data1 = (EditText) findViewById(R.id.inputA);
+        result = (TextView) findViewById(R.id.hRumus);
 
         switch (id) {
             case 0:
@@ -73,16 +83,55 @@ public class ActivityRumus extends AppCompatActivity {
         tipeB.setText(tipeBS);
     }
 
-    public void buildLingkaran() {
-        imageView.setBackgroundResource(R.drawable.lingkaran);
-        judulS = "Luas Persegi";
-        tipeS = "Sisi";
-        tipeBS = "Hitung Luas";
-        judul.setText(judulS);
-        tipe.setText(tipeS);
-        tipeB.setText(tipeBS);
+    public void hitungB(View view) {
+        int id = getIntent().getIntExtra("id", 0);
+        data = data1.getText().toString();
+        nilai = Double.parseDouble(data);
+        switch (id) {
+            case 0:
+                lPersegi();
+                break;
+            case 1:
+                kPersegi();
+                break;
+            case 2:
+                lLingkaran();
+                break;
+            case 3:
+                kLingkaran();
+                break;
+        }
     }
 
-    public void hitungB(View view) {
+    public void kPersegi() {
+        double kP = nilai * 4;
+        String text = "Keliling Persegi dengan sisi: ";
+        String aText = ", adalah: ";
+        String output = text + nilai + aText + kP;
+        result.setText(output);
+    }
+
+    public  void lPersegi() {
+        double lP = nilai * nilai;
+        String text = "Luas Persegi dengan sisi: ";
+        String aText = ", adalah: ";
+        String output = text + nilai + aText + lP;
+        result.setText(output);
+    }
+
+    public  void kLingkaran() {
+        double kL = 2 * 3.14 * nilai;
+        String text = "Keliling lingkaran dengan jari - jari: ";
+        String aText = ", adalah: ";
+        String output = text + nilai + aText + kL;
+        result.setText(output);
+    }
+
+    public void lLingkaran() {
+        double kL = 3.14 * nilai * nilai;
+        String text = "Luas lingkaran dengan jari - jari: ";
+        String aText = ", adalah: ";
+        String output = text + nilai + aText + kL;
+        result.setText(output);
     }
 }
