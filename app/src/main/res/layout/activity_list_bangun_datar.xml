@@ -52,6 +52,7 @@
                     style="?android:attr/buttonBarButtonStyle"
                     android:textColor="@color/colorPrimaryDark"
                     android:background="@drawable/lingkaran_blank"
+                    android:onClick="lingkaranC"
                     android:id="@+id/lingkaran"/>
             </TableRow>
 
@@ -76,6 +77,7 @@
                     android:background="@drawable/persegi_blank"
                     android:text="@string/persegi_panjang"
                     android:textColor="@color/colorPrimaryDark"
+                    android:onClick="persegiPC"
                     android:id="@+id/persegiPanjang"/>
 
                 <Button
@@ -85,6 +87,7 @@
                     android:textColor="@color/colorPrimaryDark"
                     android:text="@string/segitiga"
                     android:background="@drawable/segitiga_blank"
+                    android:onClick="segitigaC"
                     android:id="@+id/segitiga"/>
             </TableRow>
 
@@ -98,6 +101,7 @@
             android:background="@drawable/trapesium_blank"
             android:text="@string/trapesium"
             android:textColor="@color/colorPrimaryDark"
+            android:onClick="trapesiumC"
             android:id="@+id/trapesium"/>
 
         <LinearLayout
