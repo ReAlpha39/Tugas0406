@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ActivityRumus extends AppCompatActivity {
 
@@ -85,21 +86,25 @@ public class ActivityRumus extends AppCompatActivity {
 
     public void hitungB(View view) {
         int id = getIntent().getIntExtra("id", 0);
-        data = data1.getText().toString();
-        nilai = Double.parseDouble(data);
-        switch (id) {
-            case 0:
-                lPersegi();
-                break;
-            case 1:
-                kPersegi();
-                break;
-            case 2:
-                lLingkaran();
-                break;
-            case 3:
-                kLingkaran();
-                break;
+        if (!data1.getText().toString().isEmpty()) {
+            data = data1.getText().toString();
+            nilai = Double.parseDouble(data);
+            switch (id) {
+                case 0:
+                    lPersegi();
+                    break;
+                case 1:
+                    kPersegi();
+                    break;
+                case 2:
+                    lLingkaran();
+                    break;
+                case 3:
+                    kLingkaran();
+                    break;
+            }
+        } else {
+            Toast.makeText(getApplicationContext(), "Isi semua field", Toast.LENGTH_LONG).show();
         }
     }
 

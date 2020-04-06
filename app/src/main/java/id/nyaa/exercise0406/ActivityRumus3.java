@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ActivityRumus3 extends AppCompatActivity {
 
@@ -103,22 +104,28 @@ public class ActivityRumus3 extends AppCompatActivity {
 
     public void hitungB(View view) {
         int id = getIntent().getIntExtra("id", 0);
-        sDataA = data1.getText().toString();
-        sDataB = data2.getText().toString();
-        sDataC = data3.getText().toString();
-        nilaiA = Double.parseDouble(sDataA);
-        nilaiB = Double.parseDouble(sDataB);
-        nilaiC = Double.parseDouble(sDataC);
-        switch (id) {
-            case 7:
-                kSegitiga();
-                break;
-            case 8:
-                lTrapesium();
-                break;
-            case 9:
-                kTrapesium();
-                break;
+        if (!data1.getText().toString().isEmpty()
+            && !data2.getText().toString().isEmpty()
+            && !data3.getText().toString().isEmpty()) {
+            sDataA = data1.getText().toString();
+            sDataB = data2.getText().toString();
+            sDataC = data3.getText().toString();
+            nilaiA = Double.parseDouble(sDataA);
+            nilaiB = Double.parseDouble(sDataB);
+            nilaiC = Double.parseDouble(sDataC);
+            switch (id) {
+                case 7:
+                    kSegitiga();
+                    break;
+                case 8:
+                    lTrapesium();
+                    break;
+                case 9:
+                    kTrapesium();
+                    break;
+            }
+        } else {
+            Toast.makeText(getApplicationContext(), "Isi semua field", Toast.LENGTH_LONG).show();
         }
     }
 
