@@ -18,4 +18,9 @@ public class ListBangunDatar extends AppCompatActivity {
 
         startActivity(new Intent(this, MainActivity.class));
     }
+
+    public void persegiC(View view) {
+
+        startActivity(new Intent(this, ActivityRumus.class));
+    }
 }
