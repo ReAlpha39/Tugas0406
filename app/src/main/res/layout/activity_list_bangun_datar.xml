@@ -18,11 +18,11 @@
             android:textSize="28sp"
             android:textStyle="bold"
             android:gravity="center"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="20dp"
             android:text="@string/menu"/>
 
         <TableLayout
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="40dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_width="match_parent"
@@ -40,7 +40,7 @@
                     android:textColor="@color/colorPrimaryDark"
                     android:layout_marginEnd="20dp"
                     android:text="@string/persegi"
-                    android:background="@drawable/persegiBlank"
+                    android:background="@drawable/persegi_blank"
                     android:id="@+id/persegi"/>
 
                 <Button
@@ -50,14 +50,14 @@
                     android:text="@string/lingkaran"
                     style="?android:attr/buttonBarButtonStyle"
                     android:textColor="@color/colorPrimaryDark"
-                    android:background="@drawable/lingkaranBlank"
+                    android:background="@drawable/lingkaran_blank"
                     android:id="@+id/lingkaran"/>
             </TableRow>
 
         </TableLayout>
 
         <TableLayout
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_width="match_parent"
@@ -72,7 +72,7 @@
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="220dp"
                     android:layout_height="130dp"
-                    android:background="@drawable/persegiBlank"
+                    android:background="@drawable/persegi_blank"
                     android:text="@string/persegi_panjang"
                     android:textColor="@color/colorPrimaryDark"
                     android:id="@+id/persegiPanjang"/>
@@ -83,18 +83,18 @@
                     style="?android:attr/buttonBarButtonStyle"
                     android:textColor="@color/colorPrimaryDark"
                     android:text="@string/segitiga"
-                    android:background="@drawable/segitigaBlank"
+                    android:background="@drawable/segitiga_blank"
                     android:id="@+id/segitiga"/>
             </TableRow>
 
         </TableLayout>
 
         <Button
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="220dp"
             android:layout_height="130dp"
-            android:background="@drawable/trapesiumBlank"
+            android:background="@drawable/trapesium_blank"
             android:text="@string/trapesium"
             android:textColor="@color/colorPrimaryDark"
             android:id="@+id/trapesium"/>
@@ -103,13 +103,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="bottom"
+            android:layout_gravity="end"
             android:orientation="vertical">
 
             <Button
                 android:layout_gravity="end"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:background="@drawable/turnOff"
+                android:background="@drawable/turn_off"
                 android:id="@+id/turnOff"/>
 
             <LinearLayout
