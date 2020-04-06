@@ -6,4 +6,11 @@
     <string name="pass">Password</string>
     <string name="passH">Masukkan Password</string>
     <string name="loginB">SIGN-IN</string>
+    <string name="menu">Menu Hitung Bangun Datar</string>
+    <string name="persegi">Persegi</string>
+    <string name="lingkaran">Lingkaran</string>
+    <string name="persegi_panjang">Persegi Panjang</string>
+    <string name="segitiga">Segitiga</string>
+    <string name="trapesium">Trapesium</string>
+    <string name="nim">20180140022 - Yunus Niandy Saputro</string>
 </resources>

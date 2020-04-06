@@ -6,4 +6,133 @@
     android:layout_height="match_parent"
     tools:context=".ListBangunDatar">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="28dp"
+            android:text="@string/menu"/>
+
+        <TableLayout
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginEnd="20dp"
+                    android:text="@string/persegi"
+                    android:background="@drawable/persegiBlank"
+                    android:id="@+id/persegi"/>
+
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/lingkaran"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:background="@drawable/lingkaranBlank"
+                    android:id="@+id/lingkaran"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center">
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="220dp"
+                    android:layout_height="130dp"
+                    android:background="@drawable/persegiBlank"
+                    android:text="@string/persegi_panjang"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/persegiPanjang"/>
+
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="@string/segitiga"
+                    android:background="@drawable/segitigaBlank"
+                    android:id="@+id/segitiga"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:layout_marginTop="40dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="220dp"
+            android:layout_height="130dp"
+            android:background="@drawable/trapesiumBlank"
+            android:text="@string/trapesium"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/trapesium"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_gravity="end"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/turnOff"
+                android:id="@+id/turnOff"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="end">
+
+               <TextView
+                   android:layout_gravity="end"
+                   android:layout_width="10dp"
+                   android:layout_height="10dp"
+                   android:background="@drawable/copyright"/>
+
+                <TextView
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nim"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
