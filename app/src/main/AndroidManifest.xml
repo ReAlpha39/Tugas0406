@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActivityRumus"></activity>
+        <activity android:name=".ActivityRumus3"></activity>
+        <activity android:name=".ActivityRumus2" />
+        <activity android:name=".ActivityRumus" />
         <activity android:name=".ListBangunDatar" />
         <activity android:name=".MainActivity">
             <intent-filter>
